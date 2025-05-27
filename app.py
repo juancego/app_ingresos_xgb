@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+st.info("✅ App iniciada (inicio del script)")
+
+
 @st.cache_resource
 def cargar_modelo():
     with open("modelo_xgb.pkl", "rb") as f:
@@ -9,6 +12,9 @@ def cargar_modelo():
     return modelo
 
 modelo = cargar_modelo()
+
+st.info("✅ Modelo cargado correctamente")
+
 
 st.title("Predicción de ingreso mensual")
 
