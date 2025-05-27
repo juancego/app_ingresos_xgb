@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-st.info("✅ App iniciada (inicio del script)")
 
 
 @st.cache_resource
@@ -13,7 +12,6 @@ def cargar_modelo():
 
 modelo = cargar_modelo()
 
-st.info("✅ Modelo cargado correctamente")
 
 
 st.title("Predicción de ingreso mensual")
